@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="task in tasks" :key="task.id">
+  <div v-for="task in tasks" :key="task.id">
+
         <Task 
         @toggle-reminder="$emit('toggle-reminder', task.id)"
         @delete-task="$emit('delete-task', task.id)"
         v-bind:task="task" />
-      </li>
-    </ul>
+
   </div>
 </template>
 

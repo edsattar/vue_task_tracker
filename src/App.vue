@@ -10,7 +10,7 @@
         <AddTask @add-task="addTask"/>
       </div>
       <Tasks 
-        v-bind:tasks="tasks" 
+        :tasks="tasks" 
         @delete-task="deleteTask" 
         @toggle-reminder="toggleReminder"
       />

@@ -56,10 +56,62 @@ npm run dev
     }
   }
 </script>
-<style></style>
+<style>
+</style>
+```
+
+## 5. Optional
+
+The YouTube guide deletes the given Welcome vue components, but I decided to keep them for future reference.
+
+### Experimenting with the dev site
+```html
+<template>
+  <h3>Hello World!</h3>
+</template>
+```
+
+### Emmet
+For emmet functionality add the following to the settings.json. To find the file use Ctrl+Shift+P and look for Preferences: Open User Setting (JSON)
+```json
+"emmet.includeLanguages": {
+  "javascript": "javascriptreact",
+  "vue-html": "html",
+  "vue": "html"
+},
 ```
 
 
+
+## 6. Following the YouTube guide
+
+Copy the style for App.vue from the given [repo](https://github.com/bradtraversy/vue-crash-2021)
+
+Put `<div class="container">` around our heading<br>
+Create `Heading.vue` component<br>
+Export Header in `<script>`<br>
+Add `<style>`
+
+In App.vue<br>
+Import Header in `<script>`, and add Header to `components:`<br>
+Call the component in `<template>`
+
+Use `props:` to pass variables into sub-templates
+
+### Create Button.vue
+- style
+- @click function
+
+### Create Tasks.vue
+- pass 'tasks' array into Tasks
+- use `v-for="task in tasks" :key="task.id"` extract the elements
+
+### Create Task.vue
+- pass 'task' element into Task
+- dynamic class `v-bind:class="[task.reminder ? 'reminder' : '', 'task']`
+- add "xmark" icon, @click x to delete
+- @dblclick to toggle reminder
+- passing $emits up the components hierarcy 
 ### Compile and Minify for Production
 
 ```sh
