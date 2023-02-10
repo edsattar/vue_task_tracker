@@ -1,6 +1,10 @@
 # vue-task-tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+Make sure you have an up-to-date version of Node.js installed, then run the following command in your command line (without the > sign):
+
+```
+> npm init vue@latest
+```
 
 ## Recommended IDE Setup
 
